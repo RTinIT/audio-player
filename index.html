@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <div class="container">
+        <img class="bg" src="./assets/img/bg/bgE.jpg" alt="bg"> 
+     
+    <div class="player">
+        <div class="image-player">
+            <span class="volume"><ion-icon name="volume-high-outline"></ion-icon></span>
+            <input type="range" class="volume-line" min="0" max="100" value="80" onchange="volumeChange()">
+            <img class="enemy" src="./assets/img/enemy.jpg" alt="Enemy">
+
+        </div>
+        <h2 class="title">Music Name</h2>
+        
+        <div class="menu-player-wrapper">
+            <div class="duration">
+                <input type="range" class="duration-line" min="0" max="100" value="0" onchange="durationChange()" >
+            </div>
+            <div class="menu-player">
+                <audio src=""></audio>
+                <div class="btns">
+                    <span class="pre">
+                        <ion-icon name="play-back-outline"></ion-icon>
+                    </span>
+                    <span class="play-pause">
+                        <ion-icon name="play-outline"></ion-icon>
+                    </span>
+                    <span class="next">
+                        <ion-icon name="play-forward-outline"></ion-icon>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>
